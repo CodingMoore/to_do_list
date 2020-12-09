@@ -5,7 +5,7 @@ Initialization Date: 2020-12-09
 
 ## Project Description
 ### _Practice Exercise:_<br>
-This project is an exercise in creating objects in C#
+This project is an exercise in creating a basic to-do-list program using TDD.
 
 ## Authors and Contributors
 Authored by: Randel Moore, Nataliya Zhuravleva, Ryland Adams.
@@ -20,4 +20,4 @@ GPLv3
 Randel Moore © 2020
 
 Co-authored-by: Nataliya Zhuravleva <natalindria@gmail.com>
-Co-authored-by: Ryland Adams <rylandadams@yahoo.com>
+Co-authored-by: Ryland Adams <rylandadams@yahoo.com>"
