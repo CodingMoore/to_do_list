@@ -1872,6 +1872,11 @@
   "RootNamespace": "ToDoList",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Randel\\epicodus\\c#_projects\\ToDoList.Solution\\ToDoList\\Views\\Home\\CreateForm.cshtml",
+      "TargetPath": "Views\\Home\\CreateForm.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Randel\\epicodus\\c#_projects\\ToDoList.Solution\\ToDoList\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
