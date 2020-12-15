@@ -1,16 +1,13 @@
 using System.Collections.Generic;
-using System;
 
 namespace ToDoList.Models
 {
   public class Item
   {
-     //fields 
     public string Description { get; set; }
     private static List<Item> _instances = new List<Item> {};
 
-    //constructor
-    public Item(string description)
+    public Item (string description)
     {
       Description = description;
       _instances.Add(this);
@@ -25,6 +22,7 @@ namespace ToDoList.Models
     {
       _instances.Clear();
     }
+
   }
 }
 

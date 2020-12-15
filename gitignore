@@ -1,1 +1,4 @@
-co-author.txt
+*/obj/
+*/bin/
+.vscode
+.DS_Store
