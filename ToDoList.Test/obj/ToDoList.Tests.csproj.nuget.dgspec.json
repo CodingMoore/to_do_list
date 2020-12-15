@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Randel\\epicodus\\c#_projects\\ToDoList.Solution\\todolist.test\\ToDoList.Tests.csproj": {}
+    "C:\\Users\\Randel\\epicodus\\c#_projects\\ToDoList.Solution\\ToDoList.Test\\ToDoList.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Randel\\epicodus\\c#_projects\\ToDoList.Solution\\todolist.test\\ToDoList.Tests.csproj": {
+    "C:\\Users\\Randel\\epicodus\\c#_projects\\ToDoList.Solution\\ToDoList.Test\\ToDoList.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Randel\\epicodus\\c#_projects\\ToDoList.Solution\\todolist.test\\ToDoList.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Randel\\epicodus\\c#_projects\\ToDoList.Solution\\ToDoList.Test\\ToDoList.Tests.csproj",
         "projectName": "ToDoList.Tests",
-        "projectPath": "C:\\Users\\Randel\\epicodus\\c#_projects\\ToDoList.Solution\\todolist.test\\ToDoList.Tests.csproj",
+        "projectPath": "C:\\Users\\Randel\\epicodus\\c#_projects\\ToDoList.Solution\\ToDoList.Test\\ToDoList.Tests.csproj",
         "packagesPath": "C:\\Users\\Randel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Randel\\epicodus\\c#_projects\\ToDoList.Solution\\todolist.test\\obj\\",
+        "outputPath": "C:\\Users\\Randel\\epicodus\\c#_projects\\ToDoList.Solution\\ToDoList.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
