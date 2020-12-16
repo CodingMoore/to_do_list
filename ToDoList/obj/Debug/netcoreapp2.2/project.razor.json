@@ -1872,8 +1872,8 @@
   "RootNamespace": "ToDoList",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Randel\\epicodus\\c#_projects\\ToDoList.Solution\\ToDoList\\Views\\Items\\CreateForm.cshtml",
-      "TargetPath": "Views\\Items\\CreateForm.cshtml",
+      "FilePath": "c:\\Users\\Randel\\epicodus\\c#_projects\\ToDoList.Solution\\ToDoList\\Views\\Items\\Show.cshtml",
+      "TargetPath": "Views\\Items\\Show.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -1889,6 +1889,11 @@
     {
       "FilePath": "c:\\Users\\Randel\\epicodus\\c#_projects\\ToDoList.Solution\\ToDoList\\Views\\Items\\DeleteAll.cshtml",
       "TargetPath": "Views\\Items\\DeleteAll.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Randel\\epicodus\\c#_projects\\ToDoList.Solution\\ToDoList\\Views\\Items\\New.cshtml",
+      "TargetPath": "Views\\Items\\New.cshtml",
       "FileKind": "mvc"
     }
   ],
