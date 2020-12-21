@@ -18,6 +18,20 @@ namespace ToDoList.Models
         Id = id;
     }
 
+    public override bool Equals(System.Object otherItem)
+    {
+      if (!(otherItem is Item))
+      {
+        return false;
+      }
+      else
+      {
+        Item newItem = (Item) otherItem;
+        bool descriptionEquality = (this.Description == newItem.Description);
+        return descriptionEquality;
+      }
+    }
+
     public static List<Item> GetAll()
     {
       List<Item> allItems = new List<Item> { };
@@ -43,10 +57,19 @@ namespace ToDoList.Models
 
     public static void ClearAll()
     {
-
+      MySqlConnection conn = DB.Connection();
+      conn.Open();
+      MySqlCommand cmd = conn.CreateCommand() as MySqlCommand;
+      cmd.CommandText = @"DELETE FROM items;";
+      cmd.ExecuteNonQuery();
+      conn.Close();
+      if (conn != null)
+      {
+        conn.Dispose();
+      }
     }
 
-     public static Item Find(int searchId)
+    public static Item Find(int searchId)
     {
       // Temporarily returning placeholder item to get beyond compiler errors until we refactor to work with database.
       Item placeholderItem = new Item("placeholder item");
