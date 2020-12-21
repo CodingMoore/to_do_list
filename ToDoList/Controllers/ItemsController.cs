@@ -6,7 +6,6 @@ namespace ToDoList.Controllers
 {
   public class ItemsController : Controller
   {
-
     [HttpGet("/categories/{categoryId}/items/new")]
     public ActionResult New(int categoryId)
     {
@@ -31,6 +30,5 @@ namespace ToDoList.Controllers
       Item.ClearAll();
       return View();
     }
-
   }
 }
