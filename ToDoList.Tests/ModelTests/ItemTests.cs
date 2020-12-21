@@ -1,12 +1,12 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 using ToDoList.Models;
 using System;
-using System.Collections.Generic;
 
 namespace ToDoList.Tests
 {
   [TestClass]
-  public class ItemTests : IDisposable
+  public class ItemTest : IDisposable
   {
 
     public void Dispose()
@@ -22,45 +22,62 @@ namespace ToDoList.Tests
     }
 
     [TestMethod]
-    public void GetDescription_ReturnsDescriptioin_String()
+    public void GetDescription_ReturnsDescription_String()
     {
-      string description  = "Walk the dog.";
+      //Arrange
+      string description = "Walk the dog.";
+
+      //Act
       Item newItem = new Item(description);
       string result = newItem.Description;
+
+      //Assert
       Assert.AreEqual(description, result);
     }
 
     [TestMethod]
     public void SetDescription_SetDescription_String()
     {
-      string description = "Walk the Dog.";
+      //Arrange
+      string description = "Walk the dog.";
       Item newItem = new Item(description);
 
+      //Act
       string updatedDescription = "Do the dishes";
       newItem.Description = updatedDescription;
       string result = newItem.Description;
 
+      //Assert
       Assert.AreEqual(updatedDescription, result);
     }
 
     [TestMethod]
     public void GetAll_ReturnsEmptyList_ItemList()
     {
+      // Arrange
       List<Item> newList = new List<Item> { };
+
+      // Act
       List<Item> result = Item.GetAll();
+
+      // Assert
       CollectionAssert.AreEqual(newList, result);
     }
 
     [TestMethod]
-
     public void GetAll_ReturnsItems_ItemList()
     {
-      string descritpion01 = "Walk the dog";
-      string descritpion02 = "Wash the dishes";
-      Item newItem1 = new Item(descritpion01);
-      Item newItem2 = new Item(descritpion02);
-      List<Item> newList = new List<Item> { newItem1, newItem2};
+      //Arrange
+      string description01 = "Walk the dog";
+      string description02 = "Wash the dishes";
+      Item newItem1 = new Item(description01);
+      Item newItem2 = new Item(description02);
+      List<Item> newList = new List<Item> { newItem1, newItem2 };
+
+      //Act
       List<Item> result = Item.GetAll();
+
+      //Assert
       CollectionAssert.AreEqual(newList, result);
     }
 
@@ -78,7 +95,6 @@ namespace ToDoList.Tests
       Assert.AreEqual(1, result);
     }
 
-
     [TestMethod]
     public void Find_ReturnsCorrectItem_Item()
     {
@@ -94,6 +110,5 @@ namespace ToDoList.Tests
       //Assert
       Assert.AreEqual(newItem2, result);
     }
-    
   }
 }
